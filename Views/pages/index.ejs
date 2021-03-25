@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- ejs pohja jolle sivu rakennetaan -->
+
+<html lang="en">
+    <!-- toudaan head partialeista -->
+    <head> <%- include("../partials/head")  %> </head>
+    <body class="container">
+        <main>
+            <!-- riippuen i:n arvosta ladataan joko etusivu tai säätietoja -->
+                <% if(!i) { %> 
+                <h1><%= new_heading %> <img src=<%= new_image %> ></h1>
+                <p><%= new_paragraph %></p>
+                <h2><%= new_temperature  %> </h2>
+                <h2>Feels like: <%= new_feelslike %> </h2>
+                <h2>Humidity: <%= new_humidity %> </h2>
+                <h2>Wind speed: <%= new_speed %> </h2>
+                <!-- hakukenttä tuodaan partialeista -->
+                <p><%- include("../partials/form") %> </p>
+                <% } else { %> 
+                    <div class="jumbotron" style="text-align: center; background-color: lightblue;">
+                   <h1>Search the weather from any city!</h1>
+                   <!-- hakukenttä tuodaan partialeista -->
+                   <p><%- include("../partials/form") %></p>
+                    <% } %> 
+            </div>
+        </main>
+</body>
+</html>

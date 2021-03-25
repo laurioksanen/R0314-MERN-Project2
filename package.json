@@ -1,0 +1,25 @@
+{
+  "name": "r0314-mern-project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurioksanen/R0314-MERN-Project2.git"
+  },
+  "author": "Lauri Oksanen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurioksanen/R0314-MERN-Project2/issues"
+  },
+  "homepage": "https://github.com/laurioksanen/R0314-MERN-Project2#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
