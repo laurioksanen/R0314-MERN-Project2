@@ -2,7 +2,6 @@
 const express = require("express");
 const request = require("request");
 const bodyParser = require("body-parser");
-const fetch = require("node-fetch")
 var http = require("http");
 //alustetaan express
 const app = express();
