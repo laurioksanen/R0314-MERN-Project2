@@ -9,7 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 8081;
 
 //bodyparser
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.urlencoded({extended: true})); 
 
 //alustetaan api avain muuttujaan
 const apikey = "0b3b10ced3c6aaebd87f676f62aa34a6";
