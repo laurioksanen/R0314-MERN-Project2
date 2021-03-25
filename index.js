@@ -20,9 +20,11 @@ app.set("view engine","ejs");
 
 //etusivu
 app.get("/",(req,res)=>{
-    res.render("pages/index",{
-        i:true
-    });
+     res.render("pages/index")
+     
+
+    //     i:true
+    // });
 });
 
 //kun käyttäjä hakee kaupunkia tätä kutsutaan
